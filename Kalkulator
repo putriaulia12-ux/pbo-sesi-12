@@ -1,0 +1,91 @@
+Putri aulia
+/
+sesi12
+Publik
+Kode
+Masalah
+Tarik permintaan
+Tindakan
+Proyek
+Keamanan
+Wawasan
+sesi12/Kalkulator.java _
+@TaufikBima
+TaufikBima Menambahkan file melalui upload
+ 1 kontributor
+75 baris (62 slot)  2,17 KB
+paket  sesi12 ;
+
+impor  javax . ayunan .*;
+impor  jawa . awt .*;
+
+public  class  Kalkulator  extends  JFrame {
+    
+    JTextField  txt = JTextField baru  ( 50 );
+
+    JButton  b1 = JButton baru  ( "1" );
+    JButton  b2 = JButton baru  ( "2" );
+    JButton  b3 = JButton baru  ( "3" );
+    JButton  b4 = JButton baru  ( "4" );
+    JButton  b5 = JButton baru  ( "5" );
+    JButton  b6 = JButton baru  ( "6" );
+    JButton  b7 = JButton baru  ( "7" );
+    JButton  b8 = JButton baru  ( "8" );
+    JButton  b9 = JButton baru  ( "9" );
+    JButton  b0 = JButton baru  ( "0" );
+    JButton  bEqual = JButton baru  ( "=" );
+    JButton  bPlus = JButton baru  ( "+" );
+    JButton  bMinus = JButton baru  ( "-" );
+    JButton  b Multiply = new  JButton ( "*" );
+    JButton  bDivide = new  JButton ( "/" );
+    JButton  bPersen =  JButton baru ( "%" );
+    JButton  bModulo =  JButton baru ( "Mod" );
+    JButton  bExit = JButton baru  ( "Keluar" );
+    
+
+    Kalkulator ( int  sizex , int  sizey ){
+        super ( "Kalkulator Ilmiah" );
+        setUkuran ( sizex , sizey );
+        setDefaultCloseOperation ( EXIT_ON_CLOSE );
+        setVisible ( benar );
+        getContentPane (). setBackground ( Color.BLUE ) ; _
+        setLocationRelativeTo ( null );
+
+        FlowLayout  fl = FlowLayout baru  ();
+         Panel masukan JPanel = JPanel baru  ();
+        panel masukan . setLayout ( fl );
+        panel masukan . tambahkan ( txt );
+        tambahkan ( inputpanel , BorderLayout.NORTH ) ; _
+
+        GridLayout  gl = GridLayout baru  ( 3 , 5 );
+         panel tombol JPanel = JPanel baru  ();
+        panel tombol . setLayout ( gl );
+
+        panel tombol . tambahkan ( b1 );
+        panel tombol . tambahkan ( b2 );
+        panel tombol . tambahkan ( b3 );
+        panel tombol .tambahkan ( b4 );
+        panel tombol . menambahkan ( b5 );
+        panel tombol . menambahkan ( b6 );
+        panel tombol . menambahkan ( b7 );
+        panel tombol . menambahkan ( b8 );
+        panel tombol . menambahkan ( b9 );
+        panel tombol . menambahkan ( b0 );
+        panel tombol . menambahkan ( bSama );
+        panel tombol . menambahkan ( bPlus );
+        panel tombol . tambahkan ( bMinus );
+        panel tombol . tambahkan ( bKalikan );
+        panel tombol . tambahkan ( bBagikan );
+        panel tombol . tambahkan ( bPersen );
+        panel tombol . tambahkan ( bModulo );
+        panel tombol . tambahkan ( bKeluar );
+
+        
+        tambahkan ( panel tombol , BorderLayout.CENTER ) ;
+        
+    }
+
+    public  static  void  main ( String [] args ) {
+        Kalkulator  kal = Kalkulator baru  ( 350 , 250 );
+    }
+}
